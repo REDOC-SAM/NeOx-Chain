@@ -1,0 +1,96 @@
+/* Updated CSS */
+:root {
+  --main-color: #cb3066;
+  --second-color: #16bffd;
+  --dark: #0a0a0a;
+  --darker: #060606;
+  --light: #f8f9fa;
+  --gradient: linear-gradient(135deg, var(--second-color), var(--main-color));
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--dark);
+  color: var(--light);
+  line-height: 1.6;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 1rem 0;
+}
+
+.hero {
+  min-height: 100vh;
+  background: var(--gradient);
+  padding-top: 6rem;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, var(--second-color), var(--main-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--second-color);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: var(--main-color);
+  transform: translateY(-2px);
+}
+
+.contact-form .form-control {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: var(--light);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.footer {
+  background: var(--darker);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .navbar-collapse {
+    background: var(--dark);
+    padding: 1rem;
+  }
+}
